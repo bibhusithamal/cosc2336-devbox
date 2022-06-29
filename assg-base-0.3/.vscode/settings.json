@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "editor.tabSize": 2,
+    "C_Cpp.default.includePath": [
+        "include",
+        "../assg-base-0.3/include"
+    ]    
+}
