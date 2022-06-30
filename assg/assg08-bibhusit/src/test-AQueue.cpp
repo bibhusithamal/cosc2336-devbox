@@ -86,7 +86,6 @@ TEST_CASE("AQueue test front() member method basic functionality", "[task1]")
 
 /** Task 2: Test AQueue dequeue() member method basic functionality.
  */
-/*
 TEST_CASE("AQueue test dequeue() member method basic functionality", "[task2]")
 {
   SECTION("test dequeue on a queue of integer values")
@@ -157,7 +156,6 @@ TEST_CASE("AQueue test dequeue() member method basic functionality", "[task2]")
     CHECK_THROWS_AS(queue.dequeue(), QueueEmptyException);
   }
 }
-*/
 
 /** Task 3: Test AQueue enqueue() member method basic functionality.
  */

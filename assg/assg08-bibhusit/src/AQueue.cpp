@@ -173,6 +173,31 @@ T AQueue<T>::front() const
   // otherwise safe to return the top item
   return values[this->frontIndex];
 }
+/**
+ * @brief Dequeue queue front item
+ *
+ * Dequeue the item from the front of the queue.  This operation is
+ * O(1) constant time because we dequeue from the front of our AList
+ */
+template<class T>
+void AQueue<T>::dequeue()
+{
+  // make sure queue is not empty before we try and access
+  // the top item
+  if (this->isEmpty())
+  {
+    ostringstream out;
+    out << "Error: <AQueue>::dequeue() attempt to dequeue front item"
+        << " from empty queue, size:  " << this->size;
+
+    throw QueueEmptyException(out.str());
+  }
+
+  // simply increment the frontIndex
+  this->frontIndex = (this->frontIndex + 1) % this->allocationSize;
+  // decrement the size by 1
+  this->size -= 1;
+}
 
 /**
  * @brief Queue to string
