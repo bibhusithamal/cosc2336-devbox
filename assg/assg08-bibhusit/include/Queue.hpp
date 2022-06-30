@@ -41,7 +41,7 @@ public:
   // adding, accessing and removing values from the queue
   virtual void clear() = 0;
   // virtual void enqueue(const T& newItem) = 0;
-  virtual void dequeue() = 0;
+ // virtual void dequeue() = 0;
 
   // friend functions and friend operators
   template<typename U>

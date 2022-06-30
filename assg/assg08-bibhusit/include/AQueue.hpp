@@ -53,7 +53,7 @@ public:
   // adding, accessing and removing values from the queue
   void clear();
   T front() const;
-  void dequeue();
+  //void dequeue();
 
 protected:
   /// @brief private constant, initial allocation size for empty queues
