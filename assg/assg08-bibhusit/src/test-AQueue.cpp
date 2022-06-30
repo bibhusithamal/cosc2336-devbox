@@ -84,7 +84,6 @@ TEST_CASE("AQueue test front() member method basic functionality", "[task1]")
   }
 }
 
-
 /** Task 2: Test AQueue dequeue() member method basic functionality.
  */
 /*
